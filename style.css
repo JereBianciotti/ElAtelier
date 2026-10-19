@@ -1,0 +1,345 @@
+/* fondo */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(IMG/FONDO.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    
+}
+
+/* LOGO */
+#Logo {
+    display: block;
+    margin: 24px auto 8px;
+    width: 280px;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,.18));
+}
+
+.LogoContenedor {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.LogoIMG {
+    width: 300px;
+    height: auto;
+    padding-top: 10px;
+}
+
+.LogoTexto {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #f6f6ea;
+}
+
+.tagline {
+  text-align: center;
+  font-size: .8rem;
+  letter-spacing: .25rem;
+  text-transform: uppercase;
+  color: #6b5d52;
+  margin-bottom: 15px;
+  padding-left: 50px;
+}
+
+/* TextoInformativo */
+.sobre-nosotros {
+  max-width: 380px;
+  padding: 32px 28px;
+  background: rgba(255,255,255,.55);
+  border-radius: 20px;
+  text-align: left;
+  line-height: 1.7;
+  color: #4a3f36;
+}
+.sobre-nosotros p {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  margin: 0 0 16px;
+  color: #2f2620;
+}
+.sobre-nosotros p::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 3px;
+  margin-top: 8px;
+  background: #c0392b; /* el rojo del logo */
+  border-radius: 2px;
+}
+.sobre-nosotros p { margin: 0 0 14px; }
+.sobre-nosotros strong { color: #c0392b; }
+
+.col-md-3{
+    padding-top: 50px;
+}
+
+/* Carousel */
+.carousel-item {
+  padding: 40px 0;
+ 
+}
+
+.caja-estilizada {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.caja-estilizada:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.12) !important;
+}
+
+.imagen-contenedor img {
+    transition: transform 0.5s ease;
+}
+
+.imagen-contenedor:hover img {
+    transform: scale(1.03);
+}
+
+
+/* Botones de navegación personalizados */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+.nav-btn {
+    width: 45px;
+    height: 45px;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-btn:hover {
+    transform: scale(1.1);
+}
+
+/* CUADRO */
+.Medidas{
+    color: #79838c;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* FOOTER */
+.mac-footer {
+    width: 100%;
+    margin-top: 60px;
+    padding: 35px 0 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.375), rgba(0, 0, 0, 0.375)), url(IMG/FONDO.png);
+    color: #d2b4ac;
+    border-top: 3px solid #f7f5f9;
+    box-sizing: border-box;
+    margin-top: 120px
+}
+
+.mac-footer * {
+    box-sizing: border-box;
+}
+
+.mac-footer-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+.mac-footer-marca h2 {
+    margin: 0 0 10px;
+    font-family: Impact, Haettenschweiler, sans-serif;
+    font-size: 28px;
+    color: #f7f5f9;
+    letter-spacing: 1px;
+}
+
+.mac-footer-marca h2 span {
+    color: #e0d0c7;
+}           
+
+.mac-footer-marca p {
+    margin: 0;
+    font-size: 14px;
+    color: #f7f5f9;
+}
+
+.mac-footer-redes {
+    text-align: right;
+}
+
+.mac-footer-redes h3 {
+    margin: 0 0 15px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #f7f5f9;
+}
+
+.mac-footer-iconos {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+.mac-footer-iconos a {
+    width: 42px;
+    height: 42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #79838c;
+    border-radius: 50%;
+    color: #f7f5f9;
+    font-size: 19px;
+    text-decoration: none;
+    transition: background-color 0.25s, color 0.25s;
+}
+
+.mac-footer-iconos a:hover {
+    background-color: #f7f5f9;
+    color: #79838c;
+}
+
+.mac-footer-final {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 18px 0;
+    border-top: 1px solid #f7f5f9;
+}
+
+.mac-footer-final p {
+    margin: 0;
+    font-size: 12px;
+    color: #f7f5f9;
+}
+
+/* VERSION CELULAR */
+@media (max-width: 767px) {
+    .mac-footer {
+        margin-top: 35px;
+        padding-top: 28px;
+    }
+
+    .carousel {
+        margin: auto;
+    }
+
+    .mac-footer-contenido {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+    }
+
+    .mac-footer-marca h2 {
+        font-size: 25px;
+    }
+
+    .mac-footer-redes {
+        text-align: left;
+    }
+
+    .mac-footer-iconos {
+        justify-content: flex-start;
+    }
+
+    .mac-footer-final {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+/* AMPLIAR CUADRO */
+
+/* IMAGENES DEL CARRUSEL: INDICAN QUE SE PUEDEN TOCAR */
+.transform-hover {
+    cursor: zoom-in;
+}
+
+/* FONDO OSCURO DE LA VENTANA */
+.visor-cuadro {
+    display: none;
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.90);
+    z-index: 9999;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 50px 20px 35px;
+    box-sizing: border-box;
+}
+
+/* CUANDO SE ABRE */
+.visor-cuadro.activo {
+    display: flex;
+}
+
+/* CUADRO AMPLIADO */
+.visor-cuadro img {
+    display: block;
+    max-width: 90vw;
+    max-height: 82vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 5px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.12);
+    cursor: default;
+}
+
+/* BOTON PARA CERRAR */
+.cerrar-visor {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 45px;
+    line-height: 1;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.cerrar-visor:hover {
+    transform: scale(1.2);
+}
+
+/* TEXTO INFERIOR */
+.texto-visor {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* ADAPTACION A CELULARES */
+@media (max-width: 767px) {
+    .visor-cuadro {
+        padding: 55px 10px 25px;
+    }
+
+    .visor-cuadro img {
+        max-width: 96vw;
+        max-height: 78vh;
+    }
+
+    .cerrar-visor {
+        top: 12px;
+        right: 18px;
+        font-size: 40px;
+    }
+}

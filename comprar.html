@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="evaluacion" class="py-5 bg-dark border-top border-bottom border-secondary">
+    <div class="container py-4">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-8" data-aos="zoom-in">
+          <div class="text-center mb-4">
+            <h6 class="text-danger fw-bold text-uppercase tracking-widest" data-i18n="form_subtitle">Atención Privada</h6>
+            <h2 class="text-white fw-bold display-6" data-i18n="form_title">Solicitud de Evaluación de Elegibilidad</h2>
+            <p class="text-muted small" data-i18n="form_desc">Un Asesor Comercial Senior se pondrá en contacto con usted de manera estricta y confidencial.</p>
+          </div>
+
+          <form onsubmit="event.preventDefault(); alert('Solicitud enviada con éxito. Nos pondremos en contacto a la brevedad.');">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Nombre completo" required>
+              </div>
+              <div class="col-md-6">
+                <input type="email" class="form-control" placeholder="Correo electrónico" required>
+              </div>
+              <div class="col-md-6">
+                <input type="tel" class="form-control" placeholder="Teléfono de contacto" required>
+              </div>
+              <div class="col-md-6">
+                <select class="form-select" required>
+                  <option selected disabled value="" data-i18n="form_select">Modelo de Interés</option>
+                  <!-- SUPERCARS -->
+  <optgroup label="Supercars">
+    <option value="F80">Ferrari F80</option>
+  </optgroup>
+
+  <!-- SPORT & GT / RANGE -->
+  <optgroup label="Sport & GT / Range">
+    <option value="12Cilindri">Ferrari 12Cilindri</option>
+    <option value="12Cilindri Spider">Ferrari 12Cilindri Spider</option>
+    <option value="849 Testarossa">Ferrari 849 Testarossa</option>
+    <option value="849 Testarossa Spider">Ferrari 849 Testarossa Spider</option>
+    <option value="Amalfi">Ferrari Amalfi</option>
+    <option value="Amalfi Spider">Ferrari Amalfi Spider</option>
+    <option value="296 GTB">Ferrari 296 GTB</option>
+    <option value="296 GTS">Ferrari 296 GTS</option>
+    <option value="Purosangue">Ferrari Purosangue</option>
+    <option value="Roma Spider">Ferrari Roma Spider</option>
+  </optgroup>
+
+  <!-- SPECIAL SERIES -->
+  <optgroup label="Serie Speciale">
+    <option value="296 Speciale">Ferrari 296 Speciale</option>
+    <option value="296 Speciale A">Ferrari 296 Speciale A</option>
+    <option value="12Cilindri Manuale">Ferrari 12Cilindri Manuale</option>
+    <option value="SF90 XX Stradale">Ferrari SF90 XX Stradale</option>
+    <option value="SF90 XX Spider">Ferrari SF90 XX Spider</option>
+  </optgroup>
+
+  <!-- ICONA -->
+  <optgroup label="Icona Series">
+    <option value="Daytona SP3">Ferrari Daytona SP3</option>
+    <option value="Monza SP1 / SP2">Ferrari Monza SP1 / SP2</option>
+  </optgroup>
+                </select>
+              </div>
+              <div class="col-12">
+                <textarea class="form-control" rows="4" placeholder="Mensaje o comentarios adicionales..."></textarea>
+              </div>
+              <div class="col-12 text-center mt-4">
+                <button type="submit" class="btn btn-ferrari-red px-5" data-i18n="form_btn">Enviar Solicitud VIP</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

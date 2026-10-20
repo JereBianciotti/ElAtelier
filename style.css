@@ -50,6 +50,7 @@ body {
 /* TextoInformativo */
 .sobre-nosotros {
   max-width: 380px;
+    margin: 0 auto 30px;   /* centrada y con aire antes del carrusel */
   padding: 32px 28px;
   background: rgba(255,255,255,.55);
   border-radius: 20px;
@@ -90,6 +91,10 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+/* Texto y título de cada cuadro centrados */
+.caja-estilizada .col-md-7 {
+    text-align: center;
+}
 
 .caja-estilizada:hover {
     transform: translateY(-5px);
@@ -103,7 +108,6 @@ body {
 .imagen-contenedor:hover img {
     transform: scale(1.03);
 }
-
 
 /* Botones de navegación personalizados */
 .carousel-control-prev,

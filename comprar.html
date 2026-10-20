@@ -1,81 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Comprar un cuadro | El Atelier🎨</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bibliotecas/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bibliotecas/aos-master/dist/aos.css">
+    <link rel="stylesheet" href="bibliotecas/fontawesome-free-7.3.1-web/fontawesome-free-7.3.1-web/css/all.min.css">
 </head>
 <body>
-    <section id="evaluacion" class="py-5 bg-dark border-top border-bottom border-secondary">
-    <div class="container py-4">
-      <div class="row align-items-center justify-content-center">
-        <div class="col-lg-8" data-aos="zoom-in">
-          <div class="text-center mb-4">
-            <h6 class="text-danger fw-bold text-uppercase tracking-widest" data-i18n="form_subtitle">Atención Privada</h6>
-            <h2 class="text-white fw-bold display-6" data-i18n="form_title">Solicitud de Evaluación de Elegibilidad</h2>
-            <p class="text-muted small" data-i18n="form_desc">Un Asesor Comercial Senior se pondrá en contacto con usted de manera estricta y confidencial.</p>
+
+  <header id="Logo" data-aos="fade-down" data-aos-duration="800">
+    <div class="LogoContenedor Row">
+      <a href="index.html"><img src="IMG/LOGOSINFONDO.png" alt="El Atelier" class="LogoIMG"></a>
+    </div>
+    <p class="tagline">Taller de arte · Clases · Restauración</p>
+  </header>
+
+  <section id="comprar" class="pagina-comprar">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+
+          <div class="card border-0 shadow-lg rounded-4 p-4 p-md-5 caja-estilizada" data-aos="fade-up" data-aos-duration="1000">
+
+            <div class="text-center mb-4">
+              <h6 class="comprar-subtitulo">Atención personalizada</h6>
+              <h2 class="comprar-titulo">Quiero comprar un cuadro</h2>
+              <p class="comprar-desc">Elegí la obra que te gustó y dejanos tus datos. Nos vamos a poner en contacto con vos a la brevedad.</p>
+            </div>
+
+            <form onsubmit="event.preventDefault(); alert('Solicitud enviada con éxito. Nos pondremos en contacto a la brevedad.');">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <input type="text" class="form-control" placeholder="Nombre completo" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="email" class="form-control" placeholder="Correo electrónico" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="tel" class="form-control" placeholder="Teléfono de contacto" required>
+                </div>
+                <div class="col-md-6">
+                  <select class="form-select" required>
+                    <option selected disabled value="">Cuadro de interés</option>
+                    <option value="Memoria de la tierra">Memoria de la tierra</option>
+                    <option value="Voces del cañón">Voces del cañón</option>
+                    <option value="Reflejo de Luna">Reflejo de Luna</option>
+                    <option value="Kasaganaan">Kasaganaan</option>
+                    <option value="Tenesse">Tenesse</option>
+                    <option value="Sentir con el Alma">Sentir con el Alma</option>
+                    <option value="Fridita">Fridita</option>
+                    <option value="Ganesha">Ganesha</option>
+                    <option value="Doncella Ancestral">Doncella Ancestral</option>
+                    <option value="Destellos">Destellos</option>
+                    <option value="African Twins">African Twins</option>
+                    <option value="Otoño en el puente">Otoño en el puente</option>
+                    <option value="Armonia">Armonia</option>
+                    <option value="Plumas">Plumas</option>
+                    <option value="Aurat">Aurat</option>
+                    <option value="Misterio">Misterio</option>
+                    <option value="Encanto">Encanto</option>
+                    <option value="Elegancia">Elegancia</option>
+                    <option value="Paisaje de campo">Paisaje de campo</option>
+                    <option value="Mirada">Mirada</option>
+                    <option value="Jirafa">Jirafa</option>
+                    <option value="Metamorfosis">Metamorfosis</option>
+                    <option value="Relax Summer">Relax Summer</option>
+                    <option value="Amor Maternal">Amor Maternal</option>
+                    <option value="A pedido">Quiero una obra a pedido</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <textarea class="form-control" rows="4" placeholder="Mensaje o comentarios adicionales..."></textarea>
+                </div>
+                <div class="col-12 text-center mt-4">
+                  <button type="submit" class="btn btn-atelier">Enviar solicitud</button>
+                </div>
+              </div>
+            </form>
+
           </div>
 
-          <form onsubmit="event.preventDefault(); alert('Solicitud enviada con éxito. Nos pondremos en contacto a la brevedad.');">
-            <div class="row g-3">
-              <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="Nombre completo" required>
-              </div>
-              <div class="col-md-6">
-                <input type="email" class="form-control" placeholder="Correo electrónico" required>
-              </div>
-              <div class="col-md-6">
-                <input type="tel" class="form-control" placeholder="Teléfono de contacto" required>
-              </div>
-              <div class="col-md-6">
-                <select class="form-select" required>
-                  <option selected disabled value="" data-i18n="form_select">Modelo de Interés</option>
-                  <!-- SUPERCARS -->
-  <optgroup label="Supercars">
-    <option value="F80">Ferrari F80</option>
-  </optgroup>
+          <div class="text-center mt-4">
+            <a href="index.html" class="volver-galeria"><i class="fa-solid fa-arrow-left me-1"></i> Volver a la galería</a>
+          </div>
 
-  <!-- SPORT & GT / RANGE -->
-  <optgroup label="Sport & GT / Range">
-    <option value="12Cilindri">Ferrari 12Cilindri</option>
-    <option value="12Cilindri Spider">Ferrari 12Cilindri Spider</option>
-    <option value="849 Testarossa">Ferrari 849 Testarossa</option>
-    <option value="849 Testarossa Spider">Ferrari 849 Testarossa Spider</option>
-    <option value="Amalfi">Ferrari Amalfi</option>
-    <option value="Amalfi Spider">Ferrari Amalfi Spider</option>
-    <option value="296 GTB">Ferrari 296 GTB</option>
-    <option value="296 GTS">Ferrari 296 GTS</option>
-    <option value="Purosangue">Ferrari Purosangue</option>
-    <option value="Roma Spider">Ferrari Roma Spider</option>
-  </optgroup>
-
-  <!-- SPECIAL SERIES -->
-  <optgroup label="Serie Speciale">
-    <option value="296 Speciale">Ferrari 296 Speciale</option>
-    <option value="296 Speciale A">Ferrari 296 Speciale A</option>
-    <option value="12Cilindri Manuale">Ferrari 12Cilindri Manuale</option>
-    <option value="SF90 XX Stradale">Ferrari SF90 XX Stradale</option>
-    <option value="SF90 XX Spider">Ferrari SF90 XX Spider</option>
-  </optgroup>
-
-  <!-- ICONA -->
-  <optgroup label="Icona Series">
-    <option value="Daytona SP3">Ferrari Daytona SP3</option>
-    <option value="Monza SP1 / SP2">Ferrari Monza SP1 / SP2</option>
-  </optgroup>
-                </select>
-              </div>
-              <div class="col-12">
-                <textarea class="form-control" rows="4" placeholder="Mensaje o comentarios adicionales..."></textarea>
-              </div>
-              <div class="col-12 text-center mt-4">
-                <button type="submit" class="btn btn-ferrari-red px-5" data-i18n="form_btn">Enviar Solicitud VIP</button>
-              </div>
-            </div>
-          </form>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- REDES -->
+  <footer class="mac-footer">
+    <div class="container">
+        <div class="mac-footer-contenido">
+            <div class="mac-footer-marca">
+                <h2>El <span>Atelier</span> Porteña</h2>
+                <p>Arte a mano, Arte con amor.</p>
+            </div>
+
+            <div class="mac-footer-redes">
+                <h3>SEGUINOS</h3>
+                <div class="mac-footer-iconos">
+                    <a href="https://www.instagram.com/elatelierportena/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mac-footer-final">
+            <p>© 2026 El Atelier</p>
+            <p>Arte a mano, Arte con amor.</p>
+        </div>
+    </div>
+  </footer>
+
+  <script src="bibliotecas/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="bibliotecas/aos-master/dist/aos.js"></script>
+  <script src="bibliotecas/fontawesome-free-7.3.1-web/fontawesome-free-7.3.1-web/js/all.min.js"></script>
+  <script>
+      AOS.init({
+          duration: 800,
+          once: true
+      });
+  </script>
+
 </body>
 </html>

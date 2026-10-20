@@ -224,6 +224,106 @@ body {
     font-size: 12px;
     color: #f7f5f9;
 }
+/* COMPRAR */
+.btn-comprar {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 18px;
+    padding: 10px 22px;
+    border: 1px solid #f7f5f9;
+    border-radius: 50px;
+    color: #f7f5f9;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: background-color 0.25s, color 0.25s, transform 0.2s;
+}
+
+.btn-comprar:hover {
+    background-color: #c0392b;
+    border-color: #c0392b;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* PAGINA DE COMPRA */
+.pagina-comprar {
+    padding: 30px 0 10px;
+}
+
+.comprar-subtitulo {
+    color: #c0392b;
+    font-size: .8rem;
+    font-weight: bold;
+    letter-spacing: .25rem;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.comprar-titulo {
+    font-weight: bold;
+    color: #2f2620;
+    margin-bottom: 10px;
+}
+
+.comprar-titulo::after {
+    content: "";
+    display: block;
+    width: 48px;
+    height: 3px;
+    margin: 10px auto 0;
+    background: #c0392b;
+    border-radius: 2px;
+}
+
+.comprar-desc {
+    color: #6b5d52;
+    font-size: .95rem;
+}
+
+.caja-estilizada .form-control,
+.caja-estilizada .form-select {
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 12px;
+    padding: 12px 16px;
+    color: #4a3f36;
+    background-color: #faf8f6;
+}
+
+.caja-estilizada .form-control:focus,
+.caja-estilizada .form-select:focus {
+    border-color: #c0392b;
+    box-shadow: 0 0 0 .2rem rgba(192, 57, 43, .15);
+    background-color: #fff;
+}
+
+.btn-atelier {
+    background: #c0392b;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    padding: 12px 40px;
+    letter-spacing: 1px;
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+
+.btn-atelier:hover {
+    background: #a93226;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 .5rem 1rem rgba(192, 57, 43, .3);
+}
+
+.volver-galeria {
+    color: #6b5d52;
+    text-decoration: none;
+    font-size: .9rem;
+}
+
+.volver-galeria:hover {
+    color: #c0392b;
+}
 
 /* VERSION CELULAR */
 @media (max-width: 767px) {
